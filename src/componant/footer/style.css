@@ -1,0 +1,9 @@
+.containar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 7, 34);
+    color: white;
+    padding: 30px;
+}

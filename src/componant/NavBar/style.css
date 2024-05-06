@@ -1,0 +1,52 @@
+.navbar-brand{
+    background: linear-gradient(to right, #c22292, rgb(31, 31, 207)) !important;
+  
+  /* Apply the gradient to the text */
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  
+  /* Set text color to transparent */
+  color: transparent !important;
+  
+  font-size: 25px !important;
+    
+}
+.navbar-brand:hover{
+    background: linear-gradient(to right,rgb(31, 31, 207), rgb(194, 34, 146) ) !important;
+  
+    /* Apply the gradient to the text */
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    
+    /* Set text color to transparent */
+    color: transparent !important;
+}
+/* Assuming .bg-body-tertiary is a class */
+body .bg-body-tertiary {
+    background-color: #070722 !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+.navbar-expand-lg .navbar-collapse{
+    padding-left: 3rem !important;
+    
+}
+.btn2{
+    background-color: #e432ae !important;
+    border: 2px solid #e432ae !important;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.nav-a{
+    color: white !important;
+    text-decoration:none !important;
+    padding-left: 3rem !important;
+}
+.nav-a:hover{
+    color: #e432ae  !important;
+}

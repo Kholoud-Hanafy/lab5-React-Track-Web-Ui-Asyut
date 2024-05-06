@@ -1,0 +1,45 @@
+.cardText{
+    /* overflow: hidden;
+    max-height: 100px; */
+
+    max-height: 40px !important; /* Adjust as needed */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important; /* Add ellipsis (...) for overflowed text */
+    white-space: nowrap !important
+
+}
+.btn3{
+    background-color: #070722 !important;
+    border: 2px solid #070722 !important;
+}
+
+ .btn3:hover{
+    background-color: #e432ae !important;
+    border: 2px solid #e432ae !important;
+}
+.btn1{
+    background-color: black !important;
+    border: 2px solid black !important;
+}
+
+.btn1:hover{
+    background-color: black !important;
+    border: 2px solid black !important;
+}
+
+ .btn2{
+    background-color: #e432ae !important;
+    border: 2px solid #e432ae !important;
+}
+.btn2:hover{
+    background-color: #e432ae !important;
+    border: 2px solid #e432ae !important;
+}
+
+.starIcon {
+    color: yellow;
+    background-color: none;
+
+    margin-left: 160px; /* Adjust margin as needed */
+  }
+  

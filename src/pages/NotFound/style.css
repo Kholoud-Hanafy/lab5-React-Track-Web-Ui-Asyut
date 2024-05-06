@@ -1,0 +1,26 @@
+.hl2{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #333; 
+    margin-top: 30px;
+}
+
+.theBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.theBody .photo{
+    vertical-align: middle;
+}
+.theBody .text{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #333;
+    line-height: 22px;
+    max-width: 340px;
+    padding: 0px 20px;
+}

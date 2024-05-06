@@ -1,0 +1,41 @@
+.cardText{
+    overflow: hidden;
+    max-height: 100px;
+}
+.btn3{
+    background-color: #070722;
+    border: 2px solid #070722 !important;
+}
+
+ .btn3:hover{
+    background-color: #e432ae;
+    border: 2px solid #e432ae !important;
+}
+.btn1{
+    background-color: black;
+    border: 2px solid black !important;
+}
+
+.btn1:hover{
+    background-color: black;
+    border: 2px solid black !important;
+}
+
+ .btn2{
+    background-color: #e432ae;
+    border: 2px solid #e432ae !important;
+}
+.btn2:hover{
+    background-color: #e432ae;
+    border: 2px solid #e432ae !important;
+}
+
+.starIcon {
+    color: yellow;
+    background-color: none;
+    margin-left: 160px; /* Adjust margin as needed */
+    position: relative;
+
+    bottom: 430px;
+  }
+  
