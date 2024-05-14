@@ -1,22 +1,30 @@
-
-
 import React, { useState } from 'react';
 import './style.css';
 
 function LogInForm({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-   console.log(onLogin)
+  const [error, setError] = useState('');
+
   const handleLogin = (e) => {
     e.preventDefault();
-    
-    if (username && password) {
-      onLogin(); 
 
-    } else {
-      
-      alert('Invalid username or password');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(username)) {
+      setError('Invalid email address');
+      return;
     }
+
+    // Password validation
+    const passwordPattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;
+    if (!passwordPattern.test(password)) {
+      setError('Password must be at least 8 characters long, contain at least 1 uppercase letter, and 1 symbol');
+      return;
+    }
+
+    setError('');
+
+    onLogin();
   };
 
   return (
@@ -24,7 +32,7 @@ function LogInForm({ onLogin }) {
       <form className="login-form" onSubmit={handleLogin}>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Username (Email)"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
@@ -36,6 +44,7 @@ function LogInForm({ onLogin }) {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        {error && <div className="error" style={{ color: 'red' }}>{error}</div>}
         <button type="submit">Login</button>
       </form>
     </div>
@@ -43,7 +52,3 @@ function LogInForm({ onLogin }) {
 }
 
 export default LogInForm;
-
-
-
-  

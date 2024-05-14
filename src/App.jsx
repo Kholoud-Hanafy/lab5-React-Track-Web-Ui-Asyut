@@ -7,7 +7,7 @@ import LogInForm from './pages/Login';
 import NOtFoundComponant from './pages/NotFound';
 import NavigationBar from './componant/NavBar/index';
 import Footer from './componant/footer/index';
-import Counter from './componant/counter/index'
+import Registeration from './pages/Registeration'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LanguageProvider, useLanguage } from './Contexst/languageContext'; // Import LanguageProvider and useLanguage
 
@@ -33,7 +33,7 @@ function App() {
           <Route path='/Login' element={<LogInForm onLogin={handleLogin} />} />
           <Route path='/BestMovie' element={loggedIn ? <BestMovie /> : <LogInForm onLogin={handleLogin} />} />
           <Route path='/Details/:id' element={<MovieDetails />} />
-          <Route path='/Counter' element={<Counter/>}/>
+          <Route path='/signup' element={<Registeration/>} />
           <Route path='*' element={<NOtFoundComponant />} />
         </Routes>
         </div>
